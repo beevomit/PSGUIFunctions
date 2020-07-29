@@ -1,10 +1,10 @@
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://gitlab.com/lotspaih/msgBoxPy/blob/master/LICENSE) [![Language](https://img.shields.io/badge/language-powershell-blue.svg)](https://docs.microsoft.com/en-us/powershell/) 
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/lotspaih/PSGUIFunctions/blob/master/LICENSE) [![Language](https://img.shields.io/badge/language-powershell-blue.svg)](https://docs.microsoft.com/en-us/powershell/) 
 
 # PSGUIFunctions
 A small collection of cobbled together Powershell functions for GUI messages and user input.
 
 ## Purpose and Background
-I just needed a simple and easy way to display information, warnings, get input, select a file or directory, or ask a simple response question in a GUI format for my Powershell scripts. Sure there are many great modules I could use that are much more sophisticated, but I just found it fun to make my own and only needed some basic options. That's why I pieced together PSGUIFunction's examples for input and dialog boxes.
+I just needed a simple and easy way to display information, warnings, get input, select a file or directory, or ask a simple response question in a GUI format for my Powershell scripts. Sure there are many great modules I could use that are much more sophisticated, but I just found it fun to make my own and only needed some basic options. That's why I pieced together PSGUIFunction's examples for input and dialog boxes. Hopefully, you can get some use from them too.
 
 **The message boxes available are:**
 * Information
@@ -25,7 +25,7 @@ I just needed a simple and easy way to display information, warnings, get input,
 * Save As Filename (returns full path to file and name for saving)
 * Select Directory (returns full path to directory selected)
 
-![alt text](https://github.com/lotspaih/msgBoxPy/raw/master/ex_msgBoxPyU.png "Example Image")
+![alt text](https://github.com/lotspaih/PSGUIFunctions/raw/master/Hello_World.png "Example Image")
 
 ## Requirements
 * [ ] Windows Powershell 5.1 or Powershell Core 7
@@ -38,7 +38,7 @@ No install required. Just copy and paste the examples from within the PSGUIFunct
 Downloading PSGUIFunctions.ps1 using [cURL](https://curl.haxx.se/):
 
 ```
-curl -o PSGUIFunctions.ps1 https://github.com/lotspaih/PSGUIFunctions/raw/master/PSGUIFunctions.ps1
+curl -o PSGUIFunctions.ps1 https://raw.githubusercontent.com/lotspaih/PSGUIFunctions/master/PSGUIFunctions.ps1
 ```
 
 ## Example Use
