@@ -28,7 +28,7 @@ I just needed a simple and easy way to display information, warnings, get input,
 ![alt text](https://github.com/lotspaih/PSGUIFunctions/raw/master/Hello_World.png "Example Image")
 
 ## Requirements
-* [ ] Windows Powershell 5.1 or Powershell Core 7
+* [ ] Windows Powershell 5.1 and/or Powershell Core 7
 
 Tested with Windows 10 x64 Version 2004
 
@@ -60,11 +60,11 @@ function Select-Folder {
     return $SelectedFolder
 }
 
-$selectedFolder = Select-Folder
+$selectedFolder = Select-Folder  # Returns the full path to the selected folder assigning it to the $selectedFolder variable
 ```
 
-## TODO
-* Clean up script
+## Contributing
+If you want to contribute new functions or improve the exisiting ones, feel free to fork the repository and submit a pull request. And thanks for your time and help!
 
 ## License
 [MIT License](https://opensource.org/licenses/MIT) for msgBoxPy
