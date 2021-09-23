@@ -67,4 +67,4 @@ $selectedFolder = Select-Folder  # Returns the full path to the selected folder 
 If you want to contribute new functions or improve the exisiting ones, feel free to fork the repository and submit a pull request. And thanks for your time and help!
 
 ## License
-[MIT License](https://opensource.org/licenses/MIT) for msgBoxPy
+[MIT License](https://opensource.org/licenses/MIT) for PSGUIFunctions
