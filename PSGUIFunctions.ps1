@@ -1,8 +1,6 @@
 #Requires -Version 5
 
-
 # Collection of cobbled together Powershell functions for GUI based message and user input prompts.
-
 
 function Select-Folder {
     <#
@@ -90,6 +88,9 @@ function Show-MessageBox {
     .PARAMETER MessageBoxIcon
     Specifies the icon displayed on the message box to indicate it's type. Default is 'Information'.
 
+    .PARAMETER MessageBoxDefaultButton
+    Specifies the default button to be activated on the message box. Default is 'Button1'.
+
     .EXAMPLE
     $returnedMessageBoxButton = Show-MessageBox -MessageText "Hello, World" -MessageTitle "Hello World"
     #>
@@ -105,11 +106,15 @@ function Show-MessageBox {
         $ButtonOptions = "OKCancel",  # YesNoCancel, AbortRetryIgnore, YesNo, RetryCancel
         [Parameter(Mandatory=$false)]
         [String]
-        $MessageBoxIcon = "Information"  # Error, Question, Warning, Stop, Hand
+        $MessageBoxIcon = "Information",  # Error, Question, Warning, Stop, Hand
+        [Parameter(Mandatory=$false)]
+        [String]
+        $MessageBoxDefaultButton = "Button1"  # Button2, Button3
     )
     Add-Type -AssemblyName System.Windows.Forms
     $ButtonReturn=[System.Windows.Forms.MessageBox]::Show("$MessageText","$MessageTitle", +
-    [System.Windows.Forms.MessageBoxButtons]::$ButtonOptions,[System.Windows.Forms.MessageBoxIcon]::$MessageBoxIcon)
+    [System.Windows.Forms.MessageBoxButtons]::$ButtonOptions,[System.Windows.Forms.MessageBoxIcon]::$MessageBoxIcon, +
+    [System.Windows.Forms.MessageBoxDefaultButton]::$MessageBoxDefaultButton)
     return $ButtonReturn
 }
 
