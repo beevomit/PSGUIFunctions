@@ -30,7 +30,7 @@ I just needed a simple and easy way to display information, warnings, get input,
 ## Requirements
 * [ ] Windows Powershell 5.1 and/or Powershell Core 7
 
-Tested with Windows 10 x64 Version 2004
+Tested with Windows 10 x64 Version 21H2
 
 ## Installation
 No install required. Just copy and paste the examples from within the PSGUIFunctions.ps1 file directly into your own script and modify as needed.
