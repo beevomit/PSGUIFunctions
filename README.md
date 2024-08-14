@@ -38,7 +38,7 @@ No install required. Just copy and paste the examples from within the PSGUIFunct
 Downloading PSGUIFunctions.ps1 using [cURL](https://curl.haxx.se/):
 
 ```
-curl -o PSGUIFunctions.ps1 https://raw.githubusercontent.com/lotspaih/PSGUIFunctions/master/PSGUIFunctions.ps1
+curl -o PSGUIFunctions.ps1 https://raw.githubusercontent.com/beevomit/PSGUIFunctions/master/PSGUIFunctions.ps1
 ```
 
 ## Example Use
